@@ -1,0 +1,29 @@
+.bottom{
+    width: 100%;
+    margin-top: 100px;
+    background: #EC8675;
+    padding-bottom: 70px;
+   .lil{
+    display: flex;
+    align-items: center;
+    .sm-block({
+      justify-content: center
+    });
+    svg{
+        cursor: pointer;
+        transform: rotate(360deg);
+        &:hover path{
+            transition: 1s;
+            fill: black;
+        }
+    }
+    span{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: white;
+        margin-left: 13px;
+    }
+   }
+}

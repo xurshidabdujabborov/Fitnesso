@@ -1,0 +1,841 @@
+header {
+  width: 100%;
+}
+
+header nav {
+  padding: 20px 0px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header nav ul li {
+  padding: 0px 30px;
+}
+
+header nav ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #081158;
+}
+
+header nav ul button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #081158;
+}
+
+header nav ul button:hover {
+  cursor: pointer;
+}
+
+header nav ul img {
+  margin-left: 25px;
+}
+
+header nav .bars {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header nav .bars:hover {
+  border-color: #081158;
+  color: #081158;
+}
+
+header nav .bars .fa {
+  font-size: 26px;
+}
+
+header nav .headerLogin {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.96);
+  z-index: 11111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+}
+
+header nav .headerLogin h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #01285f;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+header nav .headerLogin form {
+  text-align: center;
+}
+
+header nav .headerLogin form input {
+  width: 300px;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #01285f;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+header nav .headerLogin form input:focus {
+  outline: none;
+}
+
+header nav .headerLogin form input::-webkit-input-placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+header nav .headerLogin form input::-moz-placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+header nav .headerLogin form input:-ms-input-placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+header nav .headerLogin form input::-ms-input-placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+header nav .headerLogin form input::placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+header nav .headerLogin form .pass {
+  position: relative;
+}
+
+header nav .headerLogin form .pass .fa {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #01285f;
+  font-size: 14px;
+}
+
+header nav .headerLogin form button {
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  outline: 2px solid #01285f;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+header nav .headerLogin form button::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(1, 40, 95, 0.5);
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(100px);
+  z-index: -11;
+}
+
+header nav .headerLogin form button::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(1, 40, 95, 0.5);
+  -webkit-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  transform: translateX(-100px);
+  z-index: -11;
+}
+
+header nav .headerLogin form button:hover::after {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+header nav .headerLogin form button:hover::before {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+header nav .headerLogin .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: block;
+  border: 2px solid #01285f;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+header nav .headerLogin .close:hover {
+  background-color: #01285f;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+header .headerTitle {
+  width: 100%;
+  background: #EEF0F4;
+}
+
+header .headerTitle .img {
+  margin-top: 80px;
+  padding-bottom: 150px;
+}
+
+header .headerTitle .img img {
+  width: 100%;
+}
+
+header .headerTitle .box {
+  text-align: left;
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
+
+header .headerTitle .box span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #081158;
+}
+
+header .headerTitle .card {
+  width: 100%;
+  background: #081158;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+header .headerTitle .card span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: white;
+  padding: 100px 0px;
+  margin: 0px 100px;
+}
+
+main {
+  width: 100%;
+  margin-top: 80px;
+}
+
+main .nan {
+  text-align: center;
+}
+
+main .box {
+  text-align: center;
+  margin-top: 100px;
+}
+
+main .box h5 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-top: 31px;
+  color: #081158;
+}
+
+main .box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #081158;
+  margin-top: 32px;
+}
+
+.center {
+  width: 100%;
+  background: #EEF0F4;
+  margin-top: 150px;
+  padding-bottom: 150px;
+}
+
+.center h2.title {
+  padding-top: 150px;
+}
+
+.center .card {
+  margin-top: 100px;
+  text-align: left;
+  background-color: white;
+}
+
+.center .card img {
+  width: 100%;
+}
+
+.center .card p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.center .card p span {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #EC8675;
+}
+
+.center .card h5 {
+  padding: 10px 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: black;
+}
+
+.center .card span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: black;
+  padding: 15px 30px;
+}
+
+.center .About {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.96);
+  z-index: 11111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+}
+
+.center .About h2.title {
+  margin-bottom: 40px;
+}
+
+.center .About .img {
+  text-align: center;
+}
+
+.center .About .img img {
+  margin: 0px 15px;
+}
+
+.center .About .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: block;
+  border: 2px solid #01285f;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .About .close:hover {
+  background-color: #01285f;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.work {
+  width: 100%;
+  padding-top: 150px;
+  background: #081158;
+  padding-bottom: 150px;
+}
+
+.work h2.title {
+  color: white;
+}
+
+.work p.text {
+  color: white;
+}
+
+.work .card {
+  margin-top: 100px;
+  text-align: left;
+  background-color: white;
+}
+
+.work .card img {
+  width: 100%;
+}
+
+.work .card p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.work .card p span {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #EC8675;
+}
+
+.work .card h5 {
+  padding: 10px 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: black;
+}
+
+.work .card span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: black;
+  padding: 15px 30px;
+}
+
+.foto {
+  width: 100%;
+}
+
+.foto img {
+  width: 100%;
+}
+
+.book {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.book img {
+  width: 100%;
+}
+
+.lil {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.lil img {
+  width: 100%;
+  height: 700px;
+}
+
+.mul {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.mul .nul {
+  text-align: center;
+}
+
+.mul .img {
+  margin-top: 100px;
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 100px;
+  background: #EC8675;
+  padding-bottom: 70px;
+}
+
+.bottom .lil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bottom .lil svg {
+  cursor: pointer;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.bottom .lil svg:hover path {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  fill: black;
+}
+
+.bottom .lil span {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: white;
+  margin-left: 13px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 150px;
+  background: #081158;
+  padding: 100px 0px;
+}
+
+footer ul {
+  text-align: left;
+}
+
+footer ul li {
+  margin: 5px 0px;
+}
+
+footer ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+footer .img .ddd {
+  margin-top: 60px;
+}
+
+body {
+  font-family: "Lato", "san-serif";
+}
+
+.activeBars {
+  display: none;
+}
+
+.activeMenuBars {
+  display: block;
+}
+
+.errorMsg {
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+  display: none;
+}
+
+h2.title {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 79px;
+  color: #081158;
+  margin-top: 32px;
+}
+
+p.text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #081158;
+  margin-top: 31px;
+}
+
+button.BgBlue {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: #081158;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+button.BgBlue:hover {
+  cursor: pointer;
+}
+
+li.fot {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: white;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  header nav ul li {
+    padding-bottom: 5px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px 0px;
+  }
+
+  header nav ul button {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  header nav ul img {
+    width: 5%;
+    margin-top: 20px;
+  }
+
+  header nav .headerLogin h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  header .headerTitle .img {
+    padding-bottom: 0px;
+  }
+
+  header .headerTitle .card span {
+    margin: 0px 50px;
+  }
+
+  .center .About .img img {
+    width: 30%;
+    margin: 0px 5px;
+    margin: auto;
+  }
+
+  .book img {
+    margin-top: 50px;
+  }
+
+  footer .joj {
+    text-align: center;
+  }
+
+  footer .img .ddd {
+    width: 100%;
+  }
+
+  .activeBars {
+    display: block;
+  }
+
+  .activeMenuBars {
+    display: none;
+  }
+
+  li.fot {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  header nav .headerLogin h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  header .headerTitle .card span {
+    margin: 0px 20px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  main .box h5 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  main .box p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .lil img {
+    height: 300px;
+  }
+
+  .bottom .lil {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  footer ul {
+    text-align: center;
+  }
+
+  footer .img {
+    display: none;
+  }
+
+  h2.title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  p.text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  button.BgBlue {
+    font-size: 10px;
+    padding: 7px 7px;
+  }
+
+  li.fot {
+    text-align: center;
+  }
+}
